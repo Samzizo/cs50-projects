@@ -1,0 +1,26 @@
+sort1 uses:
+
+BUBBLE SORT
+
+How do you know?:
+
+Random10000: real    0m0.302s
+Sorted10000: real    0m0.102s
+
+sort2 uses:
+
+MERGE SORT
+
+How do you know?:
+
+Random10000: real    0m0.067s
+Sorted10000: real    0m0.069s
+
+sort3 uses:
+
+SELECTION SORT
+
+How do you know?:
+
+Random10000: real    0m0.242s
+Sorted10000: real    0m0.184s
