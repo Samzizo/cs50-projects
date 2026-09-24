@@ -2,4 +2,4 @@
 
 ## This repo created to hold all my projects in *cs50* course
 
-# **SAMIHA Amroune**
+# **Samiha Amroune**
