@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Score
+{% endblock %}
+
+{% block main %}
+<form action = "/play" method="post">
+    <div>
+        <h1>
+            Score
+        </h1>
+        <h2>
+            Keep learning :) <br>
+            <b>
+                {{ username }}
+            </b>
+        </h2>
+        <h3>
+            {{ score }}
+        </h3>
+        
+        <button class="list-item" name="back">
+            Play Again
+        </button>
+    </div>
+</form>
+{% endblock %}

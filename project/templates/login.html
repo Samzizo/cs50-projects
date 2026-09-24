@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+<form action="/login" method="post" class="cart">
+    <div class="">
+        <label>
+            <span>User Name </span>
+            <i class="fas fa-user"></i>
+        </label>
+        <input class="" type="txt" name="username" aria-label="text">
+
+    </div>
+    <div class="">
+        <label class="" for="password">
+            <span>Password </span>
+            <i class="fas fa-user-lock"></i>
+        </label>
+        <input class=""  type="password" name="password">
+        <a href="">Forget password</a>
+        <i class="fas fa-question"></i>
+    </div>
+        <button class="snbtn" type="submit">Log In
+            <span class="glyphicon glyphicon-log-in" style="color: #FF87B7;"></span>
+        </button>
+    </div>
+
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    LIST
+{% endblock %}
+
+{% block main %}
+    <form action = "/list" method="post">
+        <div class="nestedGrid">
+            <div class="language">
+                <h2>Languages</h2>
+                <button class="list-item" name="language" value="All">ALL</button> <br>
+                <button class="list-item" name="language" value="python">PYTHON <i class="fab fa-python"></i> </button> <br>
+                <button class="list-item" name="language" value="C">C </button><br>
+                <button class="list-item" name="language" value="javaScript">JS <i class="fab fa-js"></i></button><br>
+                <button class="list-item" name="language" value="java">JAVA <i class="fab fa-java"></i></button><br>
+            </div>
+            <div class="question">
+                <h2>Questions</h2>
+                <ul class="list">
+                    {% for i, j, z in data %}
+                        <li class="list-item accordion" name="question_deleted" value="{{ i }}">{{ i }}
+                            <span class="tooltiptext">Show answer</span>
+                        </li>
+                        <li class="list-item panel" value="{{ j }}">{{ j }}</li>
+                        <button class="list-item" name="deleted" value="{{ z }}"><i class="fa fa-trash" ></i></button>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,206 @@
+/* style font awsom icon */
+i {
+    color: #FF87B7;
+}
+
+/* list on hover */
+ul li:hover {
+    background: #FF87B7 !important;
+}
+
+/* change bg for active link in nav bar */
+.active a {
+    background: #FF87B7 !important;
+}
+.active {
+    background: #FF87B7 !important;
+}
+
+.active a i {
+    color: #333;
+}
+
+li i:hover {
+    color: #333;
+}
+
+/* style footer */
+
+.ft{
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px !important;
+    font-size: 20px !important;
+    text-align: center !important;
+}
+
+/* tester image */
+.test{
+    width: 100%;
+    border-radius: 5px;
+
+    box-shadow: 5px 5px 10px #333;
+
+}
+/*  tester paragraph */
+.welcom {
+    position: relative;
+    width: 60%;
+    height: auto;
+    margin: 70px auto;
+    padding: 25px;
+    border-radius: 5px;
+    /* background-color: #FF87B7 !important; */
+    box-shadow: 5px 5px 10px #FF87B7;
+    color: #000;
+    /* border: 1px solid #333; */
+
+}
+.welcom ol{
+    text-align: left;
+}
+
+
+/* login styles */
+.cart {
+    position: relative;
+    width: 550px;
+    height: auto;
+    margin: 70px auto;
+    padding: 25px;
+    border-radius: 5px;
+    /* background-color: #FF87B7 !important; */
+    box-shadow: 5px 5px 10px #FF87B7;
+    color: #000;
+    border: 1px solid #333;
+}
+
+.cart input {
+    box-shadow: 5px 5px 10px #FF87B7;
+    margin: 10px;
+    width: 90%;
+    height: 50px;
+}
+
+.snbtn {
+    background-color: #2c2b2b;
+    color: #fff;
+    margin:15px;
+    padding: 10px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.snbtn:hover {
+    background-color: #a79999;
+    color: #000;
+}
+
+/* list page */
+
+.nestedGrid {
+    /* Set display to grid */
+    display: grid;
+    /* setup rows amd columns */
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 25% 75%;
+    grid-gap: 10px;
+}
+
+
+.list, .list-item , h2, .opt {
+    padding: 10px;
+    margin: 10px;
+}
+
+.list-item, .opt {
+    border: 1px solid  #FF87B7;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #a79999;
+    cursor: pointer;
+    list-style-type: none;
+
+}
+
+.accordion .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: #a79999;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.accordion:hover .tooltiptext {
+    visibility: visible;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    padding: 18px;
+    width: auto;
+    text-align: left;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+/* Style Add page */
+
+
+
+/* style play page */
+
+#hiddenquestion {
+    width: 550px;
+    height: auto;
+    margin: 70px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #FF87B7;
+    color: #000;
+    border: 1px solid #333;
+}
+
+.ques {
+    list-style: none;
+}
+
+.ques input {
+    border: 0;
+    width: 100%;
+}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    PLAY
+{% endblock %}
+
+{% block main %}
+<form action = "/play" method="post">
+    <div >
+        <div class="language">
+            <h2>{{title}}</h2>
+            {% for language in languages %}
+                <button class="list-item" name="language" value="{{language}}">{{language}} <i class="fab fa-{{language}}"></i> </button> <br>
+            {% endfor %}
+        </div>
+        <div id="hiddenquestion" >
+            <h2>Questions</h2>
+                <ul>
+                    <li class="ques">
+                        <input  name="question" value="{{ question }}" />
+                    </li>
+                </ul>
+                <input type="text" name="answer"><br>
+                <button class="list-item" name="check">check <i class="fa fa-check" ></i></button>
+        </div>
+    </div>
+</form>
+
+{% endblock %}

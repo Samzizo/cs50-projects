@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    TESTER
+{% endblock %}
+
+{% block main %}
+    <form action="/" method="post" >
+        <img class="test" src="./static/images/tester.png">
+        <div class="welcom" >
+            <h1>Welcome to Test Programming Languages! 😊</h1>
+            <p>
+                This web site is created to test your knowledge in certain programming languages <br>
+
+                <h3>What you will find on the site: </h3>
+                <ol>
+                <li>A list of questions with their answers</li>
+                <li>classified according to programming languages, to review your information.</li>
+                <li>Add a question for a specific programming language</li>
+                <li>Delete any question</li>
+                <li>You can also test your knowledge through a game of random questions according to the chosen programming
+                    language and at the end of the questions you get your result</li>
+                <li>You can also register and log in to track your score and log out after you are done</li>
+            </ol>
+            </p>
+        </div>
+    </form>
+
+{% endblock %}

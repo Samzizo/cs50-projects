@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sign up
+{% endblock %}
+
+{% block main %}
+    <form action="/sign_up" method="post" class="cart">
+        <div>
+            <label class="" for="email">
+                <span>User Name </span>
+                <i class="fas fa-user"></i>
+            </label>
+            <input class="" type="text" name="username" aria-label="text">
+
+        </div>
+        <div>
+            <label class="" for="password">
+                <span>Password </span>
+                <i class="fas fa-user-lock"></i>
+            </label>
+            <input name="password" type="password" aria-label="text">
+            <!-- <a href="">Forget password</a>
+            <i class="fas fa-question"></i> -->
+        </div>
+        <div class="">
+            <label class="" for="password">
+                <span>Password Again </span>
+                <i class="fas fa-user-lock"></i>
+            </label>
+            <input name="confirmation" type="password" aria-label="text">
+        </div>
+        <div>
+            <button class="snbtn" type="submit">Sign Up <i class="fa fa-user-plus"></i></button>
+        </div>
+
+
+    </form>
+
+{% endblock %}
