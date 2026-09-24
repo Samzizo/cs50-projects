@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/241bc4b752.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="script/styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+        <!-- create containair to hold all the page contents -->
+        <div class="container">
+            <!-- header and navbar -->
+            <header class="hd">
+                <nav>
+                    <ul class="nv">
+                        <img src="images/logo.png" alt="" id="logo">
+                        <li class="flo"><a href="blog/courses.html">COURSES</a></li>
+                        <li class="flo"><a href="blog/contact.html">CONTACT</a></li>
+                        <li class="flo"><a href="blog/about.html">ABOUT</a></li>
+                        <li class="flo"><a href="index.html">HOME</a></li>
+                    </ul>
+                </nav>
+                <div class="wlc">
+                    <img src="images/hdbg1.png" alt="" id="hdbg">
+                    <div class="centered">
+                        <h1>
+                            SAMIHA AMROUNE
+                        </h1>
+                        <h5>
+                            Front END Web DEVELOPer
+                        </h5>
+                        <h5>
+                            Data Analyst <br>
+                        </h5>
+                        <!-- button scroll into contact me -->
+                        <button type="button" class="btn btn-secondary" id="btn" onclick="go()">Contact ME</button>
+                    </div>
+                </div>
+            </header>
+            <main class="mn">
+                <div>
+                    <h1>
+                        Why this page?
+                    </h1>
+                    <p>
+                        I am a housewife and a mother of two children. <br>
+                        The year <b>2020</b> was a year of closures due to the Corona virus.
+                        It was a stressful and terrifying period, and in order not to get rid of depression,
+                        I decided to start some free online courses.
+                        So I took programming as a path for me, I started with simple steps, starting 
+                        with hypertext coding <b>HTML</b>, then <b>CSS, JavaScript</b> , and other things that I had, 
+                        including <b>CS50</b>, for which I make this site for the purpose of solving the problem in the eighth week
+                        But the point is that everyone can learn, and that there is nothing impossible with will and perseverance, and that you will find someone who will guide you on the right path. Therefore, on this site, I will present some of these courses that have greatly benefited me, hoping to inspire someone to take the first step towards learning the language of the future.
+                    </p>
+                </div>
+            </main>
+            <!-- create carousel for my certificates using Bootstrap -->
+            <section class="sd">
+                <h1>My CERTIFICATES </h1>
+                <div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/fnd.png" class="d-block w-100" alt="fnd certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/da.png" class="d-block w-100" alt="DA certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/android.png" class="d-block w-100" alt="android certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/full.png" class="d-block w-100" alt="full stack certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/pyth.png" class="d-block w-100" alt="python certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ux1.png" class="d-block w-100" alt="UX1 certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ux2.png" class="d-block w-100" alt="UX2 certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/algebra.png" class="d-block w-100" alt="Algebra certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/ml.png" class="d-block w-100" alt="Math for ML certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/glmark.png" class="d-block w-100" alt="Google Marketing certificate">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/quantitive.png" class="d-block w-100" alt="Quantitive method certificate">
+                            </div>
+                    </div>
+                    
+                </div>
+                <!-- footer -->
+            </section>
+            <footer class="ft">
+                <h1 class="work" id="contact">Contact Me</h1>
+                <div class="boxes">
+                    <div class="bt">
+                        <p>
+                            <i class="fa fa-envelope"></i>
+                        </p>
+                        <p>
+                            "samihaamroune3@gmail.com"
+                        </p>
+                    </div>
+                    <div class="bt">
+                        <h3>
+                            <i class="fa fa-github"></i>
+                        </h3>
+                        <p>
+                            https://github.com/Samzizo
+                        </p>
+                    </div>
+            </footer>
+
+        </div>
+        <!-- move script to buttom of body to make it works well -->
+        <script>
+            // create function to scrool into contact
+            function go () {
+                document.getElementById("contact").scrollIntoView({behavior: 'smooth'});
+            }
+            // Create function for back up button
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>
