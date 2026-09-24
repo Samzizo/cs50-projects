@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+            // Part 1 Set function to change bg color of buttons
+            function changecolor() {
+                // pop up message for the status of answer
+                let msg = document.getElementById("msg");
+                // get all buttons
+                var buttons = document.getElementsByTagName('button');
+                // loop over list of buttons
+                for (var i = 0; i < buttons.length; i++) {
+                    // button clicked
+                    buttons[i].onclick = function () {
+                        
+                        // Check the answer if correct
+                        if (this.innerText === 'The World Wide Web Consortium'){
+                            // change bg color
+                            this.style.backgroundColor = "#82b74b";
+                            // add message
+                            msg.innerHTML = "Correct!";
+                        }
+                        // else if the answer incorrect
+                        else {
+                            // change bg to red
+                            this.style.backgroundColor = "#c94c4c";
+                            // add msg
+                            msg.innerHTML = "Incorrect!";
+                    }
+                    }
+                }
+            }
+
+            // Part 2 Set function to change bg color of input field and check answer
+            function checkAnswer() {
+                // get the input
+                let inpt = document.getElementById("answer");
+                // get the input value and convert it to upper case
+                let answer = inpt.value.toUpperCase();
+                // Check the user input if correct
+                if (answer == "HYPER TEXT MARKUP LANGUAGE"){
+                    // add status msg
+                    document.getElementById("Check").innerHTML = "Correct!";
+                    // change bg to green
+                    inpt.style.backgroundColor = '#82b74b';
+                }
+                // else if the answer incorrect
+                else {
+                    // add status msg
+                    document.getElementById("Check").innerHTML = "Incorrect";
+                    // change bg to red
+                    inpt.style.backgroundColor = '#c94c4c';
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>
+                    Who is making the Web standards?
+                </h3>
+                <button class="btn" onclick="changecolor()">
+                    Google
+                </button>
+
+                <button class="btn" onclick="changecolor()">
+                    Mozilla
+                </button>
+                <button class="btn" onclick="changecolor()">
+                    The World Wide Web Consortium
+                </button>
+                <button class="btn"onclick="changecolor()">
+                    Microsoft
+                </button>
+                <button class="btn"onclick="changecolor()">
+                    Apple
+                </button>
+                <!-- create element to hold status of answer-->
+                <p id="msg"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>
+                    What does HTML stand for?
+                </h3>
+                <input type="text" id="answer">
+                <input type="submit" value="Check Answer" onclick="checkAnswer()">
+                <!-- create element to hold status of answer-->
+                <p id="Check"></p>
+            </div>
+        </div>
+    </body>
+</html>
